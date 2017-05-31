@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Number 3</title>
+</head>
+<body>
+<!--
+Requirements:
+Display five small images in a row along the bottom of a web page. The images can be any graphics files you wish.
+Each small image shall be a link to some valid website of your choice.
+There shall be a large image element in the upper part of the page which
+initially is the same image as the leftmost small image, but its width and
+height shall be twice that of the small one. It shall be a link to the same website as the small image.
+
+When you mouse over any small image, the following two things shall occur:
+1.  The large image shall change to that of the small image, but its width and height shall be twice that of the small one.
+2.  The large image shall become a link to the same website as the small image.
+Hint: The page can be implemented in 31 lines of code including all the HTML and
+JavaScript and works in Chrome, Firefox, Safari, and IE. Here's a screenshot of it running:
+
+-->
+<a href="https://www.w3schools.com">
+<img onmouseout=" bigImg(this)" onmouseover=" normalImg(this)" border="0" src="robot-head.png" alt="Smiley" width="32" height="32">
+
+<p>1.  The large image shall change to that of the small image, but its width and height shall be twice that of the small one.</p>
+<p>2.  The large image shall become a link to the same website as the small image.</p>
+
+<script>
+    function bigImg(x) {
+        x.style.height = "64px";
+        x.style.width = "64px";
+    }
+
+    function normalImg(x) {
+        x.style.height = "32px";
+        x.style.width = "32px";
+    }
+
+</script>
+</body>
+</html>
